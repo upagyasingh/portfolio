@@ -1,28 +1,23 @@
 import React from 'react'
 import {Navbar,Hero,About,Experience,Tech,Works,Feedbacks,Contact,StarsCanvas} from './components/index'
-import { BrowserRouter } from 'react-router-dom'
-
+import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from 'react-router-dom'
+import Background from './ui/Background'
+import Layout from './components/Layout'
+import Home from './components/Home'
 
 function App() {
   return (
     <BrowserRouter>
-    <div className='relative z-0 bg-primary'>
-      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-      <Navbar/>
-      <Hero/>
-      </div>
-      <div className='relative z-0'>
-      <About/>
-      <Experience/>
-      <Tech/>
-      <Works/>
-      {/* <Feedbacks/> */}
-          <Contact />
-          
-        </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} /> {/* This will match "/" */}
+          <Route path="about" element={<About />} />
+          <Route path="work" element={<Works />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App

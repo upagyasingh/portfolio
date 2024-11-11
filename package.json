@@ -21,10 +21,12 @@
     "react-dom": "^18.3.1",
     "react-motion": "^0.5.2",
     "react-parallax-tilt": "^1.7.250",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^6.28.0",
     "react-tilt": "^1.0.2",
+    "react-tsparticles": "^2.12.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.169.0"
+    "three": "^0.169.0",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
