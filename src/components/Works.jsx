@@ -62,8 +62,8 @@ const ProjectCard =({index , name , description,tags,image,source_code_link})=>{
 
 const Works = () => {
   return (
-    <>
-       <motion.div variants={textVariant()}>
+    <div>
+       <motion.div  className=' z-50'>
         <p className={styles.sectionSubText}>What i have made so far</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
@@ -73,7 +73,7 @@ const Works = () => {
         variants={fadeIn("","",0.1,1)}
         initial="hidden"
           animate="show" 
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] '
       >
         Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -82,13 +82,13 @@ const Works = () => {
           and manage projects effectively.
           </motion.p>
 
-          <div className='nt-20 flex flex-wrap gap-12'>
+          <div className='mt-20 flex flex-wrap gap-12'>
       {projects.map((pro , i)=>{
         return <ProjectCard key={`project-${i}`} index={i} {...pro}></ProjectCard>
       })}
       </div>
 
-    </>
+    </div>
   )
 }
 

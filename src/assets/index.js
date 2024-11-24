@@ -3,11 +3,13 @@ import u from "./u.svg"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
+import star from "./star.png";
+import next from "./next.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import portfolio from "./portfolio.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -38,6 +40,7 @@ import logo2 from "./company/logo2.png";
 
 export {
   shad,
+  portfolio,
   java,
   php,
   sql,
@@ -71,4 +74,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  next,
+  star
 };

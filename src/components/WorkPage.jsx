@@ -9,7 +9,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Footer from "./Footer";
 
-function Home() {
+function WorkPage() {
   const particlesInit = async (main) => {
     // Initialize tsParticles instance
     await loadFull(main);
@@ -66,22 +66,13 @@ function Home() {
         options={particlesConfig}
         className="absolute inset-0 -z-10"
       />
-      {/* Hero Section */}
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Hero />
-      </div>
+     
       {/* Remaining Sections */}
       <div className="relative z-0">
-        <About />
-        <Experience />
-        <Tech />
         <Works />
-        {/* <Feedbacks/> */}
-        <Contact />
-        
       </div>
     </div>
   );
 }
 
-export default Home;
+export default WorkPage;
