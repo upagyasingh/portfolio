@@ -143,7 +143,7 @@ import {
   
  
   const projects = [
-    {
+    { 
       name: "Student Management System",
       description:
         "A robust Management System featuring secure, role-based authentication for streamlined access control. The system integrates a webcam for real-time attendance tracking and leverages MySQL for efficient data handling. It includes comprehensive CRUD functionalities.",

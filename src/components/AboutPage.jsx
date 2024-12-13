@@ -70,6 +70,7 @@ function AboutPage() {
       {/* Remaining Sections */}
       <div className="relative z-0">
         <About />
+        <Tech/>
       </div>
     </div>
   );
